@@ -1,11 +1,19 @@
 # Mongo Pokemon Lab
 
+
+##First step
+
+Execute this command to run the mongo container
+
+`docker-compose up -d`
+
+`docker exec -it mongo-pokemon bash`
+
 Time for some Pokemon query fun in the MongoDB console...
 
-* First, grab the `seed.json` file from your repo.
-* Next, import it into MongoDB using the `mongoimport` feature. Make sure you're in the directory that includes the file before running this command in the terminal:
+* Next, import it into MongoDB using the `mongoimport` feature. Make sure you're in the directory that includes the file before running this command in the terminal inside of container:
 
-`mongoimport -d pokemon -c pokemons --jsonArray < seed.json`
+`mongoimport -d pokemon -c pokemons --jsonArray < /var/www/pokemon/seed.json`
 
 
 <br>
