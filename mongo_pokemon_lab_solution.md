@@ -70,9 +70,23 @@ __STEP 8__ Create a new collection named `Schmittymons` and add a new `Schmittym
 	* **gen**: V
 * **happiness**: 99
 
+SOLUTION
 
+Create collection
 
+`db.createCollection('Schmittymons')`
 
+Add new `Schmittymon`
+
+`db.Schmittymons.insertOne({
+    "name": "Schmitty",
+    "img": "http://40.media.tumblr.com/tumblr_m78kl3JexC1rag2cto1_500.jpg",
+    "tutor": {
+        "name": "grass pledge",
+        "gen": "V"
+    },
+    "happiness": 99
+})`
 
 
 
